@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+               
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input {
+            margin: 5px 0;
+        }
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+      
+    </style>
+    <script src="./bank account simimulation.js"></script>
+</head>
+<body>
+ 
+    <h1>Bank Account Management</h1>
+
+    <h2>Open Account</h2>
+    <form id="openAccountForm">
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Gender: <input type="text" name="gender" required></label>
+        <label>Date of Birth: <input type="date" name="dob" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Mobile: <input type="text" name="mobile" required></label>
+        <label>Address: <input type="text" name="address" required></label>
+        <label>Initial Balance: <input type="number" step="0.01" name="initialBalance" required></label>
+        <label>Aadhaar No: <input type="text" name="adharNo" required></label>
+        <label>PAN No: <input type="text" name="panNo" required></label>
+        <button type="submit">Open Account</button>
+    </form>
+
+    <h2>Update KYC</h2>
+    <form id="updateKYCForm">
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Date of Birth: <input type="date" name="dob" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Mobile: <input type="text" name="mobile" required></label>
+        <label>Aadhaar No: <input type="text" name="adharNo" required></label>
+        <label>PAN No: <input type="text" name="panNo" required></label>
+        <button type="submit">Update KYC</button>
+    </form>
+
+    <h2>Deposit Money</h2>
+    <form id="depositMoneyForm">
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Amount: <input type="number" step="0.01" name="amount" required></label>
+        <button type="submit">Deposit Money</button>
+    </form>
+
+    <h2>Withdraw Money</h2>
+    <form id="withdrawMoneyForm">
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Amount: <input type="number" step="0.01" name="amount" required></label>
+        <button type="submit">Withdraw Money</button>
+    </form>
+
+    <h2>Transfer Money</h2>
+    <form id="transferMoneyForm">
+        <label>From Name: <input type="text" name="fromName" required></label>
+        <label>To Name: <input type="text" name="toName" required></label>
+        <label>Amount: <input type="number" step="0.01" name="amount" required></label>
+        <button type="submit">Transfer Money</button>
+    </form>
+
+    <h2>Receive Money</h2>
+    <form id="receiveMoneyForm">
+        <label>To Name: <input type="text" name="toName" required></label>
+        <label>From Name: <input type="text" name="fromName" required></label>
+        <label>Amount: <input type="number" step="0.01" name="amount" required></label>
+        <button type="submit">Receive Money</button>
+    </form>
+
+    <h2>Print Statement</h2>
+    <form id="printStatementForm">
+        <label>Name: <input type="text" name="name" required></label>
+        <button type="submit">Print Statement</button>
+    </form>
+
+    <h2>Close Account</h2>
+    <form id="closeAccountForm">
+        <label>Name: <input type="text" name="name" required></label>
+        <button type="submit">Close Account</button>
+    </form>
+
+    <div id="output"></div>
+
+
+</body>
+</html>
